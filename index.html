@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Treino</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		#addNumber{
+			font-size: 20px;
+			cursor: pointer;
+			border: 1px solid #bbb;
+			padding: 10px;
+			width: 250px;
+		}
+		button{
+			cursor: pointer;	
+		}
+	</style>
+</head>
+<body>
+	<span>Escolha a operação:</span><br />
+	<button id="btnSomar" onclick="modoCalcular(1)">+</button>
+	<button id="btnSub" onclick="modoCalcular(2)">-</button>
+	<button id="btnMulti" onclick="modoCalcular(3)">x</button>
+	<button id="btnDiv" onclick="modoCalcular(4)">/</button>
+	<br />
+	<br />
+
+	<div id="addNumber"><span>[+] Adicionar Valores</span></div>
+	<br />	
+	<br />
+
+
+	<form id="formMain">
+
+		<input type="text" class="valoresCalc" name="valor1" id="valor1" value="0" />
+		<span id="op">+</span>
+		<br />
+		<br />
+
+		<input type="text" class="valoresCalc" name="valor2" id="valor2" value="0" />
+		<br />
+		<br />
+
+	</form>
+	<button id="calcularBtn">Calcular</button>
+	<br />
+	<br />
+	<div id="resultado"></div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
